@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './category.scss';
+import './header.scss';
 
-class Category extends Component {
+class Header extends Component {
     render() {
         return (
             <div className="section">
@@ -37,4 +37,4 @@ class Category extends Component {
     }
 }
 
-export default Category;
+export default Header;
