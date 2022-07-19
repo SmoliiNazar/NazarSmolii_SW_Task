@@ -1,4 +1,7 @@
 .header {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0;
     height: 80px;
     left: 0px;
     top: 0px;
@@ -61,4 +64,222 @@
     width: 65px;
     height: 3px;
     background: #5ECE7B;
+}
+
+.overlay {
+    position: absolute;
+    width: 99.14vw;
+    height: 100%;
+    background: rgba(57, 55, 72, 0.22);
+}
+
+.cart {
+    position: absolute;
+    padding-top: 32px;
+    padding-left: 16px;
+    right: 10%;
+    min-width: 325px;
+    min-height: 677px;
+    
+    background: #FFFFFF;
+    .card-info {
+        width: 293px;
+        display: flex;
+    }
+}
+
+.colored-wrapper {
+    padding-top: 10px;
+    display: flex;
+    width: 90px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    .colored-squares {
+        width: 24px;
+        height: 24px;
+
+        transition: all .3s;
+        cursor: pointer;
+        &:hover {
+            border: 2px solid lawngreen;
+        }
+    }
+}
+
+.card-name {
+    &__count {
+        span {
+            font-weight: 600;
+        }
+    }
+    &__name {
+        padding-top: 32px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 160%;
+
+        color: #1D1F22;
+    }
+    &__price {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+
+        color: #1D1F22;
+    }
+}
+
+.square-wrapper {
+    padding-top: 10px;
+    display: flex;
+    width: 130px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    .sized-squares {
+        border: 2px solid black;
+        width: 24px;
+        height: 24px;
+        
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 160%;
+        text-align: center;
+        color: #1D1F22;
+
+        cursor: pointer;
+
+        transition: all .3s;
+        &:hover {
+            color: white;
+            background-color: black
+        }
+    }
+    .SQactive {
+        color: white;
+        background-color: black
+    }
+}
+
+.card-counter {
+    margin-top: 55px;
+    margin-left: 8px;
+    width: 24px;
+    height: 220px;
+    &__counter {
+        padding-top: 58px;
+        padding-bottom: 74px;
+        text-align: center;
+    }
+    &__squares {
+        width: 24px;
+        height: 24px;
+        border: 1px solid black;
+        font-weight: 600;
+        transition: all 0.3s;
+        &:hover {
+            background-color: black;
+            .plus, .secM, .minus {
+                background-color: white;
+            }
+        }
+        .plus {
+            margin: 10px auto;
+            width: 10px;
+            height: 1px;
+            background-color: black;
+            transform: rotate(90deg);
+        }
+        .secM {
+            margin: 10px auto;
+            width: 10px;
+            height: 1px;
+            transform: translateY(-11px);
+            background-color: black;
+        }
+        .minus {
+            margin: 10px auto;
+            width: 10px;
+            height: 1px;
+            background-color: black;
+        }
+    }
+}
+.glass-wrapper {
+    padding-top: 10px;
+    display: flex;
+    width: 130px;
+    flex-wrap: nowrap;
+    justify-content: start;
+    .sg {
+        margin-right: 5px;
+    }
+}
+.total-wrapper {
+    width: 289px;
+    display: flex;
+    justify-content: space-between;
+    &__btn {
+        width: 289px;
+        display: flex;
+        justify-content: space-between;
+        .chekout-btn, .ghost {
+            width: 140px;
+            height: 43px;
+            border: 2px solid black;
+            background-color: white;
+
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 120%;
+
+            color: #1D1F22;
+        }
+        .lightgreen {
+            border: none;
+            color: white;
+            background-color: #5ECE7B;
+        }
+    }
+}
+.total-title, .total-value {
+    padding-top: 32px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: black;
+}
+
+
+.size {
+    padding-top: 10px;
+}
+.color {
+    padding-top: 10px;
+}
+
+.gray {
+    background-color: #D3D2D5;
+}
+.black {
+    background-color: #2B2B2B;
+}
+.green {
+    background-color: #0F6450;
+}
+.blue {
+    background-color: #15A4C3;
+}
+.orange {
+    background-color: #EA8120;
+}
+
+.card-img {
+    margin-top: 50px;
+    margin-left: 28px;
+    img {
+        width: 121px;
+        height: 210px;
+    }
 }
